@@ -5,30 +5,25 @@
 
 int main(void)
 {
-    int n;
-    do
+  int n;
+  do
+  {
+    n = get_int("Enter a number between 1 and 8:\n");
+  } while (n < 1 || n > 8);
+
+  //     int len = n/2;
+  string row = "#";
+  for (int i = 0; i < n; i++)
+  {
+    for (int j = n - i; j > 1; j--)
     {
-        n = get_int("Enter a number between 1 and 8:\n");
+      printf(" ");
     }
-    while (n < 1 || n > 8);
-    
-//     int len = n/2;
-    string row = "#";
-    for (int i = 0; i < n; i++)
+    for (int j = 0; j <= i; j++)
     {
-        for (int j = n-i; j >= 0; j--)
-        {
-            printf(" ");
-        }
-        for (int j = 0; j <= i; j++)
-        {
-            printf("%s",row);
-        }
-        printf("  ");
-        for (int j = 0; j <= i; j++)
-        {
-            printf("%s",row);
-        }
-        printf("\n");
+      printf("%s", row);
     }
+
+    printf("\n");
+  }
 }
