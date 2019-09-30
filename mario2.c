@@ -12,7 +12,6 @@ int main(void)
     }
     while (n < 1 || n > 8);
     
-//     int len = n/2;
     string row = "#";
     for (int i = 0; i < n; i++)
     {

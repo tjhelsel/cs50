@@ -3,6 +3,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <type.h>
 
 int shift(char c, int offset);
 
@@ -28,7 +29,7 @@ int main(int argc, string argv[])
   for (int i = 0, n = strlen(message), key_len = strlen(key); i < n; i++)
   {
     int offset = key[i % key_len] - 'a';
-    char c = message[i];
+    char c = tolower(message[i]);
     if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
     {
       shift(message[i], offset);
