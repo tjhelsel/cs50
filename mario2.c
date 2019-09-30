@@ -1,4 +1,4 @@
-//Sadly some functions/keywords will not work w/o cs50 available!
+//Some functions/keywords will not work w/o cs50 available!
 
 #include <cs50.h>
 #include <stdio.h>
